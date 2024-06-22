@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <title>zarmor game 2D</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <canvas id="gameCanvas" width="800" height="400"></canvas>
+        <div id="player1Info" class="player-info player1-info">
+            <span class="username">Player 1</span>
+            <img id="player1Health" src="heart.png" alt="Player 1 Health" class="health-bar">
+        </div>
+        <div id="player2Info" class="player-info player2-info">
+            <img id="player2Health" src="heart.png" alt="Player 2 Health" class="health-bar">
+            <span class="username">Player 2</span>
+        </div>
+        <div id="gameOverMessage" class="game-over-message">
+            <p id="gameOverText"></p>
+        </div>
+        <div class="controls">
+            <button id="leftBtn">Left</button>
+            <button id="jumpBtn">Jump</button>
+            <button id="rightBtn">Right</button>
+            <button id="fireBtn">Fire</button>
+        </div>
+    </div>
+    <audio id="shootSound" src="shoot.mp3"></audio>
+    <audio id="hitSound" src="uh.mp3"></audio>
+   <audio id="backgroundMusic" src="bc.mp3" autoplay loop></audio>
+    <script src="game.js"></script>
+</body>
+</html>
